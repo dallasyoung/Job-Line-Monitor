@@ -1,0 +1,7 @@
+compress
+
+/var/log/jobline/log {
+	rotate 52
+	weekly
+	dateext
+}
