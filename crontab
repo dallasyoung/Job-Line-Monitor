@@ -1,2 +1,3 @@
-0 0 * * 2-6 /check_daily_job_line_calls.sh
-5 0 * * 6 /email_weekly_job_line_report.sh
+5 0 * * 1 /email_weekly_job_line_report.sh
+10 0 * * 1 /rotate_job_line_logs.sh
+59 23 * * * /check_daily_job_line_calls.sh
