@@ -4,8 +4,8 @@ job_line_log_file="/var/log/jobline/log"
 asterisk_log_file="/var/log/asterisk/full"
 date=$(date)
 
-job_line_call_count=$(grep "Playing announcement Job Line Main" /var/log/asterisk/full | wc -l)
-announcement_logs=$(grep "Playing announcement Job Line Main" /var/log/asterisk/full)
+job_line_call_count=$(grep "Playing announcement Job Line Main" $asterisk_log_file | wc -l)
+announcement_logs=$(grep "Playing announcement Job Line Main" $asterisk_log_file)
 
 echo -e "$date: $job_line_call_count job line calls\n" >> $job_line_log_file
 
