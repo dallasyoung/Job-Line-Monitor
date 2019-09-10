@@ -1,3 +1,3 @@
 #!/bin/bash
 
-logrotate /var/log/jobline/jobline.logrotate
+/usr/sbin/logrotate /var/log/jobline/jobline.logrotate
