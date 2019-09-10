@@ -7,7 +7,7 @@ date=$(date)
 job_line_call_count=$(grep "Playing announcement Job Line Main" /var/log/asterisk/full | wc -l)
 announcement_logs=$(grep "Playing announcement Job Line Main" /var/log/asterisk/full)
 
-echo $date: $job_line_call_count job line calls >> $job_line_log_file
+echo -e "$date: $job_line_call_count job line calls\n" >> $job_line_log_file
 
 if [ $job_line_call_count -gt 0 ]; then
 	while read -r line; do
