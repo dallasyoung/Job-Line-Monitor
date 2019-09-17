@@ -28,7 +28,7 @@ if [ $job_line_call_count -gt 0 ]; then
 		external_did=${external_did%?}
 		#echo $external_did
 
-		echo -e "\t$timestamp\t$external_did ($sip_channel)" >> $job_line_log_file
+		echo -e "\t$timestamp\t$external_did ($sip_channel)\n" >> $job_line_log_file
 	# note(dallas): Thank you StackOverflow: https://stackoverflow.com/questions/613572/capturing-multiple-line-output-into-a-bash-variable#answer-613580
 	done <<< "$announcement_logs"
 	# else, no jobline calls, nothing to do
